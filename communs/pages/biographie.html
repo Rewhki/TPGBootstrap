@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Biographie</title>
+        <title>Bootstrap demo</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -14,8 +14,31 @@
 
     </head>
     <body>
+        <style>
+            @font-face{
+                font-family: Arthure;
+                src: url('/assets/fonts/Arthure/Arthure.ttf');
+            }
+            
+            
+            @font-face{
+                font-family: Raleway;
+                src: url('/assets/fonts/Raleway/Raleway.ttf')
+            }
+        
+            h1{
+                font-family: Arthure;
+            }
+        
+            p, h2, h3, h4, h5, h6, a{
+                font-family: Raleway;
+            }
+        </style>
+
         <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #C7B2F0">
+            <nav
+                class="navbar navbar-expand-lg"
+                style="background-color: #c7b2f0">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Logo</a>
                     <button
@@ -34,22 +57,22 @@
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item me-3">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link"
                                     aria-current="page"
-                                    href="#"
+                                    href="/index.html"
                                     >Accueil</a
                                 >
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="#">Biographie</a>
+                                <a class="nav-link active" href="/communs/pages/biographie.html">Biographie</a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link" aria-disabled="true"
+                                <a class="nav-link" aria-disabled="true" href="/communs/pages/tableaux.html"
                                     >Tableau</a
                                 >
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link" aria-disabled="true"
+                                <a class="nav-link" aria-disabled="true" href="/communs/pages/dessins.html"
                                     >Dessin</a
                                 >
                             </li>
@@ -64,32 +87,40 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item disabled"
+                                            href=""
                                             >2024</a
                                         >
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="communs/pages/evenement.html#2023"
                                             >2020 - 2023</a
                                         >
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="communs/pages/evenement.html#2020"
                                             >2010 - 2020</a
                                         >
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="communs/pages/evenement.html#2010"
                                             >2000 - 2010</a
                                         >
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link" aria-disabled="true"
+                                <a class="nav-link" aria-disabled="true" href="/communs/pages/contact.html"
                                     >Contact</a
                                 >
                             </li>
@@ -97,9 +128,7 @@
                     </div>
                 </div>
             </nav>
-</head>
-<body>
-    
+        </header>
 
     <!--accordeon-->
     <h1 class="BioTitre text-center mt-5 mb-5">Ma Biographie</h1>
@@ -117,12 +146,14 @@
                           <img src="https://img.freepik.com/photos-gratuite/portrait-belle-femme-posant-visage-peint_114579-41325.jpg?size=626&ext=jpg" alt="Image 1" style="width: 100%; height: auto;">
                       </div>
                       <div class="accordion-text" style="flex: 70%;">
+                        <p>
                           <strong>Je m'appelle Samira,</strong> je suis une <strong>artiste contemporaine</strong> spécialisée dans les <strong>peintures et dessins abstraits.</strong> 
                           Née en 1985 dans la ville de Sevran en Seine-Saint-Denis, j'ai très tôt voué une passion sans limite à l'art. Ce qui m'a initié à l'art au départ est le <strong>street art</strong> 
                           très présent dans les rues de Sevran.<br><br>Dès mon plus jeune âge j'ai donc passé des heures à dessiner et à peindre sur les murs de ma cité. Par la suite, je suis partie faire des <strong>études d'art à l'Académie des Beaux-Arts</strong>,
                           où j'ai découvert tout un univers passionnant. J'y ai affiné mes compétences et développé <strong>mon propre style</strong> influencé par les grands maîtres de l'abstraction tels que <strong>Vassily Kandinsky et Jackson Pollock,</strong> 
                           J'ai fini par troquer mes bombes de peintures par des pinceaux, et les murs avec des toiles de diverses tailles. <br><br><strong>Depuis 2010</strong>, je réalise de nombreuses toiles que ce soit pour de la vente ou des expositions temporaires.
                           Ces expositions m'ont permises de <strong>voyager à travers l'Europe</strong> et faire la rencontre de pleins d'artistes et amateurs d'art. J'espère prochainement pouvoir <strong>ouvrir ma propre exposition.</strong>
+                        </p>
                       </div>
                   </div>
               </div>
@@ -136,12 +167,14 @@
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body d-flex">
                       <div class="accordion-text" style="flex: 70%; margin-right: 15px;">
+                        <p>
                           Depuis <strong>cinq ans,</strong> je réalise mes œuvres dans un atelier qui est bien plus qu'un simple espace de travail, 
                           c'est un véritable sanctuaire de création. Situé au cœur d'un <strong>quartier artistique vibrant</strong> du 16ème arrondissement de Paris.<br><br> 
                           Mon atelier est un reflet de mon <strong>esprit créatif</strong> et de mon approche unique de l'art abstrait. L'atelier est en face d'un splendide <strong>bâtiment historique</strong>, 
                           aux murs de briques apparentes, offrant une atmosphère à la fois chaleureuse et inspirante quand je l'observe depuis ma fênetre. Mon atelier a des grandes fenêtres laissant entrer une <strong>lumière naturelle abondante,</strong> 
                           illuminant les moindres recoins de l'espace et mettant en valeur mes différentes toiles. <br><br>Les murs de mon atelier sont <strong>tapissés de mes œuvres</strong> en cours, 
                           créant un <strong>panorama dynamique</strong> de formes et de couleurs qui évoluent constamment.
+                        </p>
                       </div>
                       <div class="accordion-image" style="flex: 30%;">
                           <img src="https://www.amesauvage.com/img/cms/atelier-artiste-peintre-4.jpg" alt="Image 2" style="width: 100%; height: auto;">
@@ -161,6 +194,7 @@
                           <img src="https://i.ibb.co/QrV9b9q/tableaurose.png" alt="Image 3" style="width: 100%; height: auto;">
                       </div>
                       <div class="accordion-text" style="flex: 70%;">
+                        <p>
                           Je vois mon travail comme une exploration incessante de la couleur, de la texture et de la forme. 
                           Mes peintures abstraites sont souvent décrites comme des <strong>paysages émotionnels,</strong> où chaque coup de pinceau est un reflet de mes sentiments et de mes pensées.<br><br>
                           J'utilise une large variété de techniques, y compris <strong>l'acrylique, l'aquarelle et l'encre.</strong> 
@@ -170,6 +204,7 @@
                           qui invite les spectateurs à plonger dans leur propre expérience émotionnelle et sensorielle.<br><br>
                           Ce style artistique on peut le voir <strong>évoluer au fil de mes oeuvres.</strong> Au départ je m'inspirais énormément sans digérer les oeuvres que j'aimais, aménant à des tableaux sans personnalité réelle. 
                           Mais je pense avoir depuis quelques années réussie à fournir ma <strong>propre vision de l'art,</strong> et surtout réussie au niveau de la retranscription de mes émotions à travers mes oeuvres.
+                        </p>
                       </div>
                   </div>
               </div>
@@ -183,11 +218,13 @@
               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                   <div class="accordion-body d-flex">
                       <div class="accordion-text" style="flex: 70%; margin-right: 15px;">
+                        <p>
                           J'essaye d'avoir une approche unique et vibrante de l'art abstrait, je puise son inspiration dans le travail de plusieurs <strong>peintres abstraits renommés</strong> qui ont marqué l'histoire de l'art. 
                           Ces artistes ont non seulement influencé ma technique, mais aussi mon approche de la couleur, de la forme et de l'émotion dans mes différentes œuvres.<br><br>
                           De <strong>Vassily Kandinsky</strong> à <strong>Mark Rothko</strong> en passant par <strong>Helen Frankenthaler,</strong> les peintres m'ayant influencé sont nombreux. 
                           Mais il n'y a pas que la peinture qui me sert de source d'inspiration. Une autre de mes grandes sources d'inspiration vient du <strong>cinéma,</strong><br><br>
                           Un médium permettant aux œuvres de se mouvoir. L'innovation technique et l'énergie de <strong>Len Lye</strong> m'ont beaucoup aidé à expérimenter de nouvelles techniques et à intégrer une sensation de mouvement et de vivacité dans mon travail.
+                        </p>
                       </div>
                       <div class="accordion-image" style="flex: 30%;">
                           <img src="http://www.radionz.co.nz/assets/galleries/16018/full_Len_Lye_-_Rainbow_Dance_-_1936_Courtesy_the_British_Post_Office__Len_Lye_Foundation_Govett-Brewster_Art_Gallery_and_New_Zealand_Film_Archive_-2.jpg?1437618319" alt="Image 4" style="width: 100%; height: auto;">
@@ -323,14 +360,12 @@
       <!-- Copyright -->
   </footer>
   <!-- Footer -->
+
+  
+
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
   crossorigin="anonymous"></script>
-</body>
-</html>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
